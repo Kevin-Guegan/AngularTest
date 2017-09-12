@@ -1,0 +1,32 @@
+.btn {
+    width: 4em;
+    margin: 0.5em;
+}
+
+.operation {
+    height:25%;
+    width:100%;
+    box-sizing:border-box;
+    padding:4px;
+    position:relative;
+    display:table;
+}
+.operation .text {
+    border-radius:1vmin;
+    background-color:#868e96;
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+    font-size:18vh;
+}
+.operation, .operation {
+    font-size:13vh;
+}
+
+.winpoint {
+    color: green;
+}
+
+.loosepoint {
+    color: red;
+}

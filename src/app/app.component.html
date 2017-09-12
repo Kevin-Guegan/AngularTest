@@ -1,0 +1,184 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+</div>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<ul>
+  <div class="container">
+    <div class="row">
+        <div class="col-1">
+        </div>
+        <div class="col-4">
+            <button type="button" (click)="changeOperation('x')" class="btn btn-secondary">X</button>
+            <button type="button" (click)="changeOperation('+')" class="btn btn-secondary">+</button>
+            <button type="button" (click)="changeOperation('-')" class="btn btn-secondary">-</button>
+            <button type="button" (click)="changeOperation('?')" class="btn btn-secondary">?</button>
+        </div>
+        <div class="col-2">
+        </div>
+
+        <div class="col-4">
+        </div>
+        <div class="col-1">
+        </div>
+    </div>
+      <div class="row">
+          <div class="col-1"></div>
+          <div class="col-10" >
+            <div class="operation">
+                <div class="text">
+                    {{valeur1}} {{Operation}} {{valeur2}}
+                </div>
+            </div>
+              <div> Bonne reponse : <p class="winpoint">{{totalWinpoint}}</p></div>
+              <div> Mauvaise reponse : <p class="loosepoint">{{totalLoosepoint}}</p></div>
+          </div>
+          <div class="col-1"></div>
+      </div>
+      <div class="row">
+          <div class="col-1"></div>
+          <div class="col-10">
+              <button type="button" (click)="myFunc(0)" class="btn btn-secondary">0</button>
+              <button type="button" (click)="myFunc(1)" class="btn btn-secondary">1</button>
+              <button type="button" (click)="myFunc(2)" class="btn btn-secondary">2</button>
+              <button type="button" (click)="myFunc(3)" class="btn btn-secondary">3</button>
+              <button type="button" (click)="myFunc(4)" class="btn btn-secondary">4</button>
+              <button type="button" (click)="myFunc(5)" class="btn btn-secondary">5</button>
+              <button type="button" (click)="myFunc(6)" class="btn btn-secondary">6</button>
+              <button type="button" (click)="myFunc(7)" class="btn btn-secondary">7</button>
+              <button type="button" (click)="myFunc(8)" class="btn btn-secondary">8</button>
+              <button type="button" (click)="myFunc(9)" class="btn btn-secondary">9</button>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-1"></div>
+          <div class="col-10">
+              <button type="button" (click)="myFunc(10)" class="btn btn-secondary">10</button>
+              <button type="button" (click)="myFunc(11)" class="btn btn-secondary">11</button>
+              <button type="button" (click)="myFunc(12)" class="btn btn-secondary">12</button>
+              <button type="button" (click)="myFunc(13)" class="btn btn-secondary">13</button>
+              <button type="button" (click)="myFunc(14)" class="btn btn-secondary">14</button>
+              <button type="button" (click)="myFunc(15)" class="btn btn-secondary">15</button>
+              <button type="button" (click)="myFunc(16)" class="btn btn-secondary">16</button>
+              <button type="button" (click)="myFunc(17)" class="btn btn-secondary">17</button>
+              <button type="button" (click)="myFunc(18)" class="btn btn-secondary">18</button>
+              <button type="button" (click)="myFunc(19)" class="btn btn-secondary">19</button>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-1"></div>
+            <div class="col-10">
+              <button type="button" (click)="myFunc(20)" class="btn btn-secondary">20</button>
+              <button type="button" (click)="myFunc(21)" class="btn btn-secondary">21</button>
+              <button type="button" (click)="myFunc(22)" class="btn btn-secondary">22</button>
+              <button type="button" (click)="myFunc(23)" class="btn btn-secondary">23</button>
+              <button type="button" (click)="myFunc(24)" class="btn btn-secondary">24</button>
+              <button type="button" (click)="myFunc(25)" class="btn btn-secondary">25</button>
+              <button type="button" (click)="myFunc(26)" class="btn btn-secondary">26</button>
+              <button type="button" (click)="myFunc(27)" class="btn btn-secondary">27</button>
+              <button type="button" (click)="myFunc(28)" class="btn btn-secondary">28</button>
+              <button type="button" (click)="myFunc(29)" class="btn btn-secondary">29</button>
+            </div>
+          <div class="col-1"></div>
+          <div class="col-1"></div>
+            <div class="col-10">
+              <button type="button" (click)="myFunc(30)" class="btn btn-secondary">30</button>
+              <button type="button" (click)="myFunc(31)" class="btn btn-secondary">31</button>
+              <button type="button" (click)="myFunc(32)" class="btn btn-secondary">32</button>
+              <button type="button" (click)="myFunc(33)" class="btn btn-secondary">33</button>
+              <button type="button" (click)="myFunc(34)" class="btn btn-secondary">34</button>
+              <button type="button" (click)="myFunc(35)" class="btn btn-secondary">35</button>
+              <button type="button" (click)="myFunc(36)" class="btn btn-secondary">36</button>
+              <button type="button" (click)="myFunc(37)" class="btn btn-secondary">37</button>
+              <button type="button" (click)="myFunc(38)" class="btn btn-secondary">38</button>
+              <button type="button" (click)="myFunc(39)" class="btn btn-secondary">39</button>
+            </div>
+          <div class="col-1"></div>
+          <div class="col-1"></div>
+            <div class="col-10">
+              <button type="button" (click)="myFunc(40)" class="btn btn-secondary">40</button>
+              <button type="button" (click)="myFunc(41)" class="btn btn-secondary">41</button>
+              <button type="button" (click)="myFunc(42)" class="btn btn-secondary">42</button>
+              <button type="button" (click)="myFunc(43)" class="btn btn-secondary">43</button>
+              <button type="button" (click)="myFunc(44)" class="btn btn-secondary">44</button>
+              <button type="button" (click)="myFunc(45)" class="btn btn-secondary">45</button>
+              <button type="button" (click)="myFunc(46)" class="btn btn-secondary">46</button>
+              <button type="button" (click)="myFunc(47)" class="btn btn-secondary">47</button>
+              <button type="button" (click)="myFunc(48)" class="btn btn-secondary">48</button>
+              <button type="button" (click)="myFunc(49)" class="btn btn-secondary">49</button>
+            </div>
+          <div class="col-1"></div>
+          <div class="col-1"></div>
+            <div class="col-10">
+              <button type="button" (click)="myFunc(50)" class="btn btn-secondary">50</button>
+              <button type="button" (click)="myFunc(51)" class="btn btn-secondary">51</button>
+              <button type="button" (click)="myFunc(52)" class="btn btn-secondary">52</button>
+              <button type="button" (click)="myFunc(53)" class="btn btn-secondary">53</button>
+              <button type="button" (click)="myFunc(54)" class="btn btn-secondary">54</button>
+              <button type="button" (click)="myFunc(55)" class="btn btn-secondary">55</button>
+              <button type="button" (click)="myFunc(56)" class="btn btn-secondary">56</button>
+              <button type="button" (click)="myFunc(57)" class="btn btn-secondary">57</button>
+              <button type="button" (click)="myFunc(58)" class="btn btn-secondary">58</button>
+              <button type="button" (click)="myFunc(59)" class="btn btn-secondary">59</button>
+            </div>
+          <div class="col-1"></div>
+          <div class="col-1"></div>
+            <div class="col-10">
+              <button type="button" (click)="myFunc(60)" class="btn btn-secondary">60</button>
+              <button type="button" (click)="myFunc(61)" class="btn btn-secondary">61</button>
+              <button type="button" (click)="myFunc(62)" class="btn btn-secondary">62</button>
+              <button type="button" (click)="myFunc(63)" class="btn btn-secondary">63</button>
+              <button type="button" (click)="myFunc(64)" class="btn btn-secondary">64</button>
+              <button type="button" (click)="myFunc(65)" class="btn btn-secondary">65</button>
+              <button type="button" (click)="myFunc(66)" class="btn btn-secondary">66</button>
+              <button type="button" (click)="myFunc(67)" class="btn btn-secondary">67</button>
+              <button type="button" (click)="myFunc(68)" class="btn btn-secondary">68</button>
+              <button type="button" (click)="myFunc(69)" class="btn btn-secondary">69</button>
+            </div>
+          <div class="col-1"></div>
+          <div class="col-1"></div>
+            <div class="col-10">
+              <button type="button" (click)="myFunc(70)" class="btn btn-secondary">70</button>
+              <button type="button" (click)="myFunc(71)" class="btn btn-secondary">71</button>
+              <button type="button" (click)="myFunc(72)" class="btn btn-secondary">72</button>
+              <button type="button" (click)="myFunc(73)" class="btn btn-secondary">73</button>
+              <button type="button" (click)="myFunc(74)" class="btn btn-secondary">74</button>
+              <button type="button" (click)="myFunc(75)" class="btn btn-secondary">75</button>
+              <button type="button" (click)="myFunc(76)" class="btn btn-secondary">76</button>
+              <button type="button" (click)="myFunc(77)" class="btn btn-secondary">77</button>
+              <button type="button" (click)="myFunc(78)" class="btn btn-secondary">78</button>
+              <button type="button" (click)="myFunc(79)" class="btn btn-secondary">79</button>
+            </div>
+          <div class="col-1"></div>
+          <div class="col-1"></div>
+            <div class="col-10">
+              <button type="button" (click)="myFunc(80)" class="btn btn-secondary">80</button>
+              <button type="button" (click)="myFunc(81)" class="btn btn-secondary">81</button>
+              <button type="button" (click)="myFunc(82)" class="btn btn-secondary">82</button>
+              <button type="button" (click)="myFunc(83)" class="btn btn-secondary">83</button>
+              <button type="button" (click)="myFunc(84)" class="btn btn-secondary">84</button>
+              <button type="button" (click)="myFunc(85)" class="btn btn-secondary">85</button>
+              <button type="button" (click)="myFunc(86)" class="btn btn-secondary">86</button>
+              <button type="button" (click)="myFunc(87)" class="btn btn-secondary">87</button>
+              <button type="button" (click)="myFunc(88)" class="btn btn-secondary">88</button>
+              <button type="button" (click)="myFunc(89)" class="btn btn-secondary">89</button>
+            </div>
+          <div class="col-1"></div>
+          <div class="col-1"></div>
+            <div class="col-10">
+              <button type="button" (click)="myFunc(90)" class="btn btn-secondary">90</button>
+              <button type="button" (click)="myFunc(91)" class="btn btn-secondary">91</button>
+              <button type="button" (click)="myFunc(92)" class="btn btn-secondary">92</button>
+              <button type="button" (click)="myFunc(93)" class="btn btn-secondary">93</button>
+              <button type="button" (click)="myFunc(94)" class="btn btn-secondary">94</button>
+              <button type="button" (click)="myFunc(95)" class="btn btn-secondary">95</button>
+              <button type="button" (click)="myFunc(96)" class="btn btn-secondary">96</button>
+              <button type="button" (click)="myFunc(97)" class="btn btn-secondary">97</button>
+              <button type="button" (click)="myFunc(98)" class="btn btn-secondary">98</button>
+              <button type="button" (click)="myFunc(99)" class="btn btn-secondary">99</button>
+          </div>
+          <div class="col-1"></div>
+      </div>
+  </div>
+</ul>
+
